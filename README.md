@@ -16,17 +16,17 @@ Call the "SupportDisplay.initLayoutSetParams(this)" method in your APP entrance,
 Then Create your Activities extends UIBuildBaseActivity and BaseFragment extends UIBuildBaseFragment.
 
 For example:<br>
-`
-public class LoginActivity extends BaseActivity {
-	
-	public LoginActivity() {
-		super(R.id.rl_login_bg);
-	}
 
-	@Override
-	protected void onCreate(Bundle arg0) {
-		super.onCreate(arg0);
-		setContentView(R.layout.activity_login);`
+    	public class LoginActivity extends BaseActivity {
+	
+    		public LoginActivity() {
+    			super(R.id.rl_login_bg);
+    		}
+
+    		@Override
+    		protected void onCreate(Bundle arg0) {
+    			super.onCreate(arg0);
+    			setContentView(R.layout.activity_login);
 
 
 ### Third<br>
@@ -37,14 +37,14 @@ TextSize unit use "sp".<br>
 Drawables should be put in "drawable-nodpi" folder.<br>
 
 For example:<br>
-`
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/rl_login_bg"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:ignore="PxUsage" >
+
+    	<?xml version="1.0" encoding="utf-8"?>
+    	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        	xmlns:tools="http://schemas.android.com/tools"
+        	android:id="@+id/rl_login_bg"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	tools:ignore="PxUsage" >
 
     <TextView
         android:id="@+id/tv_login_watertitle"
@@ -136,6 +136,6 @@ For example:<br>
         android:text="@string/login_app"
         android:textSize="14sp" />
 
-</RelativeLayout>`
+    	</RelativeLayout>
 
 That's all.
