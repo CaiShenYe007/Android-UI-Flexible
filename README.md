@@ -1,5 +1,5 @@
 # Android-UI-Flexible
-Build ui once run on all screen size.
+Build ui layout once run on all screen size.
 
 ##System requirements
 Android 2.3.3 or higher
