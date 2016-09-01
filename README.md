@@ -1,13 +1,18 @@
-Welcome to the AndroidUIBuildSupport wiki!
+# Android-UI-Flexible
+Build ui once run on all screen size.
 
-This lib project can help Android developers build ui once run on all size screens.
+##System requirements
+Android 2.3.3 or higher
 
-### First, confirm the base size of your ui according to UI design, set params below in SupportDisplay.java:<br>
+##How to use
+### First<br>
+Confirm the base size of your ui according to UI design, set params below in SupportDisplay.java:<br>
  BASIC_SCREEN_WIDTH (default 640f)<br>
  BASIC_SCREEN_HEIGHT (default 960f)<br>
  BASIC_DENSITY (default 2.0f)<br>
 
-### Second, Call the "SupportDisplay.initLayoutSetParams(this)" method in your APP entrance, such as onCreate() of SplashActivity or Application. <br>
+### Second<br>
+Call the "SupportDisplay.initLayoutSetParams(this)" method in your APP entrance, such as onCreate() of SplashActivity or Application. <br>
 Then Create your Activities extends UIBuildBaseActivity and BaseFragment extends UIBuildBaseFragment.
 
 For example:<br>
@@ -24,7 +29,8 @@ public class LoginActivity extends BaseActivity {
 		setContentView(R.layout.activity_login);`
 
 
-### Third, write layout.xml files. <br>
+### Third<br>
+Write layout.xml files. <br>
 Make an ID for the root layout.<br>
 Set the widget sizes(width, height, margin, padding...) by "px" instead of "dp" according to UI design.<br>
 TextSize unit use "sp".<br>
